@@ -1,0 +1,110 @@
+:root {
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+    --teal: #127993;
+    --bg-white: #ffffff;
+    --bg-off: #f9f9f9;
+    --text-dark: #111111;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    background-color: var(--bg-white); 
+    color: var(--text-dark);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+
+.eyebrow {
+    font-weight: 800;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--teal);
+    display: block;
+    margin-bottom: 24px;
+}
+
+.display-title {
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 0.95;
+}
+
+
+.l-g { font-size: 0.4em; opacity:1; }
+.l-r { font-size: 0.6em; opacity:1; }
+.l-o { font-size: 0.85em; opacity:1; }
+.l-w { font-size: 1.2em; opacity: 1; }
+
+.accent-text { color: var(--teal); }
+
+.info-card {
+    padding-left: 30px;
+    border-left: 1px solid #ddd;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.info-card p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* PHILOSOPHY ACCORDION */
+.philosophy { padding: 120px 8%; background: var(--bg-off); }
+.sub-heading { font-weight: 700; color: #ccc; margin-bottom: 40px; text-transform: uppercase; }
+
+.acc-item { border-top: 1px solid #e0e0e0; transition: background 0.3s; }
+
+/* HOVER EFFECT LOGIC */
+.acc-item:hover { background: #fff; }
+.acc-item:hover .acc-body { max-height: 400px; }
+.acc-item:hover .acc-title { color: var(--teal); padding-left: 10px; }
+
+.acc-header { padding: 40px 0; display: flex; align-items: center; cursor: pointer; }
+.acc-id { font-weight: 800; color: var(--teal); margin-right: 40px; font-size: 1.1rem; }
+.acc-title { font-size: 2.2rem; font-weight: 700; color: #222; transition: all 0.4s ease; }
+
+.acc-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.acc-content { padding: 0 0 40px 65px; }
+.acc-content p { font-size: 1.2rem; color: #555; max-width: 900px; line-height: 1.6; }
+
+/* OPENINGS GRID */
+.openings { padding: 120px 8%; background: #000; color: #fff; }
+.display-title-sm { font-size: 5rem; font-weight: 800; line-height: 0.9; margin-bottom: 20px; }
+.tagline { font-size: 0.7rem; letter-spacing: 3px; color: #444; font-weight: 800; margin-bottom: 60px; }
+
+.grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); border: 1px solid #222; }
+
+.job-card { padding: 60px 40px; border: 0.5px solid #222; transition: 0.4s; cursor: pointer; }
+.job-card:hover { background: var(--teal); }
+.job-card h3 { font-size: 1.75rem; font-weight: 700; margin-bottom: 12px; }
+.job-card span { font-size: 0.8rem; letter-spacing: 2px; color: #666; font-weight: 600; }
+.job-card:hover span { color: #fff; }
+
+/* MANIFESTO */
+.manifesto { padding: 150px 10%; text-align: center; }
+.manifesto-text { font-size: 2.5rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }

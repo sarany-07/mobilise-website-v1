@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    MOBILISE WEBSITE V2
+    Global B2B Marketing Agency
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILISE | Global B2B Marketing Agency</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+        href="https://marketingcampaign.online/landing_pages/rebranding/V3/images/favicon.png">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =======================================================================
+         1. LOADING OVERLAY
+         Initial brand reveal animation.
+         ======================================================================= -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-panel panel-left"></div>
+        <div class="intro-panel panel-right"></div>
+        <div class="intro-content">
+            <div class="intro-text-wrapper">
+                <span class="intro-text">Clear.</span>
+                <span class="intro-text">Creative.</span>
+                <span class="intro-text">Connected.</span>
+                <span class="intro-text brand">MOBILISE</span>
+            </div>
+        </div>
+    </div>
+    <!-- =======================================================================
+         2. NAVIGATION
+         Top navbar and fullscreen hamburger menu.
+         ======================================================================= -->
+    <nav class="nav" id="mainNav">
+        <!-- Logo -->
+        <a href="#" class="logo-container">
+            <img src="./images/mobilise_new_logo.png" alt="MOBILISE" class="main-logo">
+        </a>
+        <!-- Hamburger Button -->
+        <div class="menu-btn" id="menuBtn">
+            <div class="hamburger-box">
+                <span class="line top"></span>
+                <span class="line bottom"></span>
+            </div>
+            <span class="btn-label" id="btnLabel">MENU</span>
+        </div>
+    </nav>
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-bg"></div>
+        <div class="menu-content">
+            <div class="menu-links">
+                <a href="#expertise" class="nav-item">Expertise</a>
+                <a href="#reach" class="nav-item">Global Reach</a>
+                <a href="#insights" class="nav-item">Insights</a>
+                <a href="./careers/index.html" class="nav-item">Careers</a>
+                <a href="./contact/index.html" class="nav-item highlight">Let's Talk</a>
+            </div>
+        </div>
+    </div>
+    <!-- =======================================================================
+         3. HERO SECTION (MAGNETIC)
+         Interactive physics-based text and intro CTA.
+         ======================================================================= -->
+    <!-- Legacy Hero (Commented Out) -->
+    <!-- 
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="reveal">
+                    B2B MARKETING FOR <br><span>GLOBAL BRANDS.</span>
+                </h1>
+                <p class="reveal">
+                    We help enterprise brands flourish across APAC, EMEA, and the Americas through strategy, storytelling, and creative precision.
+                </p>
+                <div class="cta-group reveal">
+                    <a href="#" class="btn btn-talk">Let's Talk</a>
+                    <a href="#" class="btn btn-learn">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="hero-decoration">
+                <div class="circle-blob"></div>
+                <div class="grid-pattern"></div>
+            </div>
+        </section>
+        <div id="content-anchor"></div>
+    </main> 
+    -->
+    <section class="hero-magnetic">
+        <!-- Background Grain/Gradient -->
+        <div class="grain-overlay"></div>
+
+        <!-- Magnetic Physics Text Stage -->
+        <div class="magnetic-stage">
+            <div class="magnetic-headline" id="magneticText">
+                <!-- Text injected via JS -->
+            </div>
+        </div>
+
+        <!-- UI Layer (Header Info & CTA) -->
+        <div class="hero-ui-layer">
+            <header class="top-bar reveal">
+                <!-- Optional Top Info -->
+            </header>
+
+            <div class="bottom-bar reveal">
+                <div class="mission-statement">
+                    <p>Delivering full service purposeful marketing services, helping brands scale their marketing
+                        efforts with deliberation, precision, and unbounded creativity.</p>
+                </div>
+
+                <div class="cta-cluster">
+                    <a href="./contact/index.html" class="btn-magnetic primary">
+                        <span class="btn-text">Let's Talk</span>
+                        <div class="btn-fill"></div>
+                    </a>
+                    <a href="#learn" class="btn-magnetic secondary">
+                        <span class="btn-text">Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======================================================================
+         4. TUNNEL SECTION
+         3D Z-Axis scroll effect.
+         ======================================================================= -->
+    <div class="tunnel-scroll-track">
+        <section class="tunnel-sticky-stage">
+
+            <!-- Layer 1: Intro -->
+            <div class="tunnel-layer" id="layer1">
+                <div class="content-box">
+                    <span class="eyebrow">ABOUT US</span>
+                    <h2 class="main-title">MOBILISE stands at the <span>forefront</span> of B2B marketing.</h2>
+                </div>
+            </div>
+
+            <!-- Layer 2: Description -->
+            <div class="tunnel-layer" id="layer2">
+                <div class="content-box">
+                    <p class="sub-statement">Fusing bold creativity, sharp strategy, and real purpose for reliability.
+                    </p>
+                    <p class="sub-description">We prioritize originality, delivering meaningful solutions that resonate.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Layer 3: Truth Cards -->
+            <div class="tunnel-layer" id="layer3">
+                <div class="truth-wrapper">
+                    <div class="truth-card">
+                        <span class="card-num">01</span>
+                        <h3>We see truths before they become popular.</h3>
+                    </div>
+                    <div class="truth-card">
+                        <span class="card-num">02</span>
+                        <h3>We spot shifts before the market does.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- =======================================================================
+         5. TRUST & AWARDS
+         Simple strip of awards/certifications.
+         ======================================================================= -->
+    <section class="simple-trust">
+        <div class="trust-header">
+            <h2 class="trust-title">Top-rated, certified <span>PERFORMANCE.</span></h2>
+            <p class="trust-subtitle">4.9/5.0 Global Rating across enterprise sectors.</p>
+        </div>
+
+        <div class="award-strip">
+            <div class="award-box">
+                <img src="./images/award1.png" alt="Award 1">
+                <span class="award-tag">Strategy</span>
+            </div>
+            <div class="award-box">
+                <img src="./images/award2.png" alt="Award 2">
+                <span class="award-tag">Creative</span>
+            </div>
+            <div class="award-box">
+                <img src="./images/award3.png" alt="Award 3">
+                <span class="award-tag">Growth</span>
+            </div>
+            <div class="award-box">
+                <img src="./images/award4.png" alt="Award 4">
+                <span class="award-tag">Global</span>
+            </div>
+            <div class="award-box">
+                <img src="./images/award5.png" alt="Award 5">
+                <span class="award-tag">Innovation</span>
+            </div>
+        </div>
+    </section>
+    <!-- =======================================================================
+         6. SERVICES GRID (BENTO)
+         Grid layout of services offered.
+         ======================================================================= -->
+    <section class="services-modern" id="expertise">
+        <div class="services-bg-text">MOBILISE</div>
+
+        <div class="services-container">
+            <div class="section-intro reveal">
+                <span class="eyebrow">What we do</span>
+                <h2>Achieve predictable business growth through <span>proven strategy.</span></h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 01: Featured -->
+                <div class="service-card featured reveal">
+                    <div class="card-number">01</div>
+                    <div class="card-body">
+                        <h3>Full service marketing</h3>
+                        <p>Implement data-driven marketing and sales programs that increase customers, revenue, and
+                            profitability.</p>
+                    </div>
+                    <a href="#" class="service-link">View Solution <span>→</span></a>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="service-card reveal">
+                    <div class="card-number">02</div>
+                    <div class="card-body">
+                        <h3>Creative production</h3>
+                        <p>From compelling content to videos that share your story – we deliver unparalleled design.</p>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="service-card reveal">
+                    <div class="card-number">03</div>
+                    <div class="card-body">
+                        <h3>Design & development</h3>
+                        <p>UI/UX and SEO-optimized websites that showcase your value proposition effectively.</p>
+                    </div>
+                </div>
+                <!-- Card 04 -->
+                <div class="service-card reveal">
+                    <div class="card-number">04</div>
+                    <div class="card-body">
+                        <h3>Sales enablement</h3>
+                        <p>Kits, collateral, and tools that empower sales teams to lead from the front.</p>
+                    </div>
+                </div>
+                <!-- Card 05 -->
+                <div class="service-card reveal">
+                    <div class="card-number">05</div>
+                    <div class="card-body">
+                        <h3>Marketing Strategy</h3>
+                        <p>Decades of experience ensures your marketing and sales strategy delivers tangible results.
+                        </p>
+                    </div>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======================================================================
+         7. TESTIMONIALS
+         Client quotes slider.
+         ======================================================================= -->
+    <section class="testimonial-stage" id="testimonials">
+        <div class="testi-glow"></div>
+
+        <div class="stage-container">
+            <!-- Navigation Header -->
+            <div class="testi-nav reveal">
+                <div class="section-intro reveal">
+                    <span style="color: aliceblue;" class="eyebrow">Testimonials</span>
+                </div>
+                <span class="nav-count">01 / 06</span>
+            </div>
+
+            <!-- Testimonial Items -->
+            <div class="testi-wrapper reveal">
+
+                <!-- Item 1 -->
+                <div class="testi-item active">
+                    <blockquote class="huge-quote">
+                        “You are the human form of <span>GenAI</span> — input a prompt, give parameters, and poof, you
+                        deliver everything magically!”
+                    </blockquote>
+                    <div class="testi-author">
+                        <img src="./images/testimonials/redhat.png" alt="Client Logo" class="testi-logo">
+                        <cite>Head of Strategy, APJ Marketing</cite>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="testi-item">
+                    <blockquote class="huge-quote">
+                        “You are our superstar <span>APAC</span> creative team. Best partners any brand could ask for —
+                        absolute champions!”
+                    </blockquote>
+                    <div class="testi-author">
+                        <img src="./images/testimonials/redhat.png" alt="Red Hat" class="testi-logo">
+                        <cite>Global Brand and Campaigns Lead</cite>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="testi-item">
+                    <blockquote class="huge-quote">
+                        “Awesome work at <span>superfast TAT</span>! Our global stakeholders are your fans. Really
+                        appreciate your support.”
+                    </blockquote>
+                    <div class="testi-author">
+                        <img src="./images/testimonials/redhat.png" alt="Red Hat" class="testi-logo">
+                        <cite>Head of WW Studio</cite>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="testi-item">
+                    <blockquote class="huge-quote">
+                        “Thank you for your <span>quick responses</span>. The entire AMER team are all very keen on
+                        having our creative support.”
+                    </blockquote>
+                    <div class="testi-author">
+                        <img src="./images/testimonials/redhat.png" alt="Red Hat" class="testi-logo">
+                        <cite>Global Customer Success Leader</cite>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="testi-item">
+                    <blockquote class="huge-quote">
+                        “Top region <span>5 years in a row</span>! A fantastic partnership — brilliant, creative at its
+                        best and delivered in record time.”
+                    </blockquote>
+                    <div class="testi-author">
+                        <img src="./images/testimonials/redhat.png" alt="Red Hat" class="testi-logo">
+                        <cite>Head of Marketing - South Asia</cite>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="testi-item">
+                    <blockquote class="huge-quote">
+                        “I wanted to express my <span>sincere gratitude</span> for the incredible work. The leadership
+                        team calls it the best marketing to date!”
+                    </blockquote>
+                    <div class="testi-author">
+                        <img src="./images/testimonials/redhat.png" alt="Red Hat" class="testi-logo">
+                        <cite>Marketing Lead, Australia</cite>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="stage-controls reveal">
+                <button class="ctrl-btn prev" aria-label="Previous">←</button>
+                <button class="ctrl-btn next" aria-label="Next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         8. INDUSTRY SPECIALIZATIONS
+         Vertical list of industries.
+         ======================================================================= -->
+    <section class="industry-section" id="specializations">
+        <div class="side-label">INDUSTRIES</div>
+
+        <div class="industry-container">
+            <div class="section-intro reveal">
+                <span class="eyebrow">Industry Specializations</span>
+                <h2>Tailored expertise for <span>global leaders.</span></h2>
+            </div>
+
+            <div class="industry-list">
+                <!-- Tech -->
+                <div class="industry-item reveal" data-bg="tech">
+                    <div class="industry-info">
+                        <span class="ind-num">01</span>
+                        <h3>Technology</h3>
+                        <p>Incredibly unique processes for developing creative, audience targets, and allocation
+                            strategies across deep-tech products and enterprise solutions.</p>
+                    </div>
+                    <div class="ind-arrow">→</div>
+                </div>
+
+                <!-- SaaS -->
+                <div class="industry-item reveal" data-bg="saas">
+                    <div class="industry-info">
+                        <span class="ind-num">02</span>
+                        <h3>SaaS</h3>
+                        <p>A proven playbook and approach – tailored and optimized to grow B2B SaaS companies through
+                            any stage of marketing maturity.</p>
+                    </div>
+                    <div class="ind-arrow">→</div>
+                </div>
+
+                <!-- eCommerce -->
+                <div class="industry-item reveal" data-bg="ecomm">
+                    <div class="industry-info">
+                        <span class="ind-num">03</span>
+                        <h3>eCommerce</h3>
+                        <p>Strategies and assets that drive the most effective dollar-in-dollar-out customer acquisition
+                            strategies for retail business.</p>
+                    </div>
+                    <div class="ind-arrow">→</div>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="industry-item reveal" data-bg="health">
+                    <div class="industry-info">
+                        <span class="ind-num">04</span>
+                        <h3>Healthcare</h3>
+                        <p>Expertise in the highly complex buyer’s journey of healthcare decision-makers and a deep
+                            understanding of medical professionals.</p>
+                    </div>
+                    <div class="ind-arrow">→</div>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="industry-item reveal" data-bg="manuf">
+                    <div class="industry-info">
+                        <span class="ind-num">05</span>
+                        <h3>Manufacturing</h3>
+                        <p>Nuanced social and digital campaign plans custom designed for unique B2B and B2C customers
+                            across industrial segments.</p>
+                    </div>
+                    <div class="ind-arrow">→</div>
+                </div>
+
+                <!-- Fashion -->
+                <div class="industry-item reveal" data-bg="fashion">
+                    <div class="industry-info">
+                        <span class="ind-num">06</span>
+                        <h3>Fashion</h3>
+                        <p>Marketing tools and assets that serve highly technical audience segments – from decision
+                            makers to developers.</p>
+                    </div>
+                    <div class="ind-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         9. INSIGHTS & BLOG
+         News articles with hover preview.
+         ======================================================================= -->
+    <section class="insights-modern" id="insights">
+        <div class="insights-container">
+            <header class="insights-header reveal">
+                <h2 class="massive-title">LATEST <span>INSIGHTS</span></h2>
+                <p class="subtitle">Exploring the intersection of data, creativity, and human-led AI.</p>
+            </header>
+
+            <div class="insights-list">
+                <!-- Article 1 -->
+                <article class="insight-row reveal">
+                    <div class="row-content">
+                        <div class="meta">
+                            <span class="number">01</span>
+                            <span class="date">MARCH 06, 2025</span>
+                        </div>
+                        <h3 class="insight-title" data-img="./images/blog/b1.jpg">
+                            Beyond the <span>Four-Day Week</span>: Why Flexibility Matters
+                        </h3>
+                    </div>
+                    <div class="row-action">
+                        <a href="#" class="circle-btn">READ <br> MORE</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="insight-row reveal">
+                    <div class="row-content">
+                        <div class="meta">
+                            <span class="number">02</span>
+                            <span class="date">MARCH 04, 2025</span>
+                        </div>
+                        <h3 class="insight-title" data-img="./images/blog/b2.jpg">
+                            Dark Social: The <span>Blind Spot</span> in Attribution
+                        </h3>
+                    </div>
+                    <div class="row-action">
+                        <a href="#" class="circle-btn">READ <br> MORE</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="insight-row reveal">
+                    <div class="row-content">
+                        <div class="meta">
+                            <span class="number">03</span>
+                            <span class="date">MAY 22, 2024</span>
+                        </div>
+                        <h3 class="insight-title" data-img="./images/blog/b3.jpg">
+                            AI Influencers: Transforming <span>Brand</span> Marketing
+                        </h3>
+                    </div>
+                    <div class="row-action">
+                        <a href="#" class="circle-btn">READ <br> MORE</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="insights-footer reveal">
+                <a href="#" class="magnetic-link">EXPLORE ALL ARTICLES</a>
+            </div>
+        </div>
+
+        <!-- Floating Image Preview -->
+        <div class="cursor-image-preview"></div>
+    </section>
+
+
+    <!-- =======================================================================
+         10. CLIENTS SECTION
+         Liquid lens scrolling ticker.
+         ======================================================================= -->
+    <section class="client-perfect-section" id="clients">
+        <div class="side-label">PARTNERS</div>
+
+        <div class="client-container">
+            <div class="client-intro-mini">
+                <span class="eyebrow">The Company We Keep</span>
+                <h2>Global <span>Partnership</span></h2>
+            </div>
+
+            <div class="liquid-lens-wrapper">
+                <div class="liquid-track">
+                    <!-- Logos (Duplicated for seamless loop) -->
+                    <div class="brand-item"><img src="./images/clients/addidas.png" alt="Adidas"></div>
+                    <div class="brand-item"><img src="./images/clients/airasia.jpg" alt="AirAsia"></div>
+                    <div class="brand-item"><img src="./images/clients/bira.png" alt="Bira"></div>
+                    <div class="brand-item"><img src="./images/clients/canon.jpg" alt="Canon"></div>
+                    <div class="brand-item"><img src="./images/clients/cat.png" alt="CAT"></div>
+                    <div class="brand-item"><img src="./images/clients/elastic.jpg" alt="Elastic"></div>
+                    <div class="brand-item"><img src="./images/clients/finastra.png" alt="Finastra"></div>
+                    <div class="brand-item"><img src="./images/clients/ge.jpg" alt="GE"></div>
+                    <div class="brand-item"><img src="./images/clients/RA.jpg" alt="Rockwell"></div>
+                    <div class="brand-item"><img src="./images/clients/redhat.png" alt="Red Hat"></div>
+                    <div class="brand-item"><img src="./images/clients/addidas.png" alt="Adidas"></div>
+                    <div class="brand-item"><img src="./images/clients/airasia.jpg" alt="AirAsia"></div>
+                    <div class="brand-item"><img src="./images/clients/bira.png" alt="Bira"></div>
+                    <div class="brand-item"><img src="./images/clients/canon.jpg" alt="Canon"></div>
+                    <div class="brand-item"><img src="./images/clients/cat.png" alt="CAT"></div>
+                    <div class="brand-item"><img src="./images/clients/elastic.jpg" alt="Elastic"></div>
+                    <div class="brand-item"><img src="./images/clients/finastra.png" alt="Finastra"></div>
+                    <div class="brand-item"><img src="./images/clients/ge.jpg" alt="GE"></div>
+                    <div class="brand-item"><img src="./images/clients/RA.jpg" alt="Rockwell"></div>
+                    <div class="brand-item"><img src="./images/clients/redhat.png" alt="Red Hat"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         11. GLOBAL REACH (MAP PORTAL)
+         Interactive map visualizer with studios.
+         ======================================================================= -->
+    <section class="map-portal" id="reach">
+        <!-- Visual Map Layers -->
+        <div class="map-camera">
+            <div class="map-visual-layer" id="mapLayer">
+                <img src="./images/world-map-tech.png" alt="Global Network">
+
+                <!-- Map Markers -->
+                <div class="map-marker" style="top: 32%; left: 25%;"></div>
+                <div class="map-marker" style="top: 48%; left: 63%;"></div>
+                <div class="map-marker" style="top: 58%; left: 76%;"></div>
+                <div class="map-marker" style="top: 65%; left: 83%;"></div>
+            </div>
+            <div class="map-vignette"></div>
+        </div>
+
+        <!-- Sidebar UI -->
+        <div class="map-ui-container">
+            <div class="map-sidebar">
+                <header class="sidebar-intro reveal">
+                    <span class="eyebrow">GLOBAL NETWORK</span>
+                    <h2>Our <span style="color: white;">Studios</span></h2>
+                    <p>Strategically positioned to serve brands across APAC, EMEA, and the Americas.</p>
+                </header>
+
+                <div class="location-picker">
+                    <!-- Seattle -->
+                    <button class="loc-card active" data-x="28" data-y="18" data-z="2.5">
+                        <div class="loc-header">
+                            <span class="loc-id">01</span>
+                            <h3>Seattle, USA</h3>
+                        </div>
+                        <div class="loc-details">
+                            <p>150th Court, NE, Redmond<br>Seattle WA 98052</p>
+                        </div>
+                    </button>
+
+                    <!-- Dubai -->
+                    <button class="loc-card" data-x="8" data-y="6" data-z="3.5">
+                        <div class="loc-header">
+                            <span class="loc-id">02</span>
+                            <h3>Dubai, UAE</h3>
+                        </div>
+                        <div class="loc-details">
+                            <p>Building A1, DDP, Silicon Oasis<br>Dubai, UAE</p>
+                        </div>
+                    </button>
+
+                    <!-- Bangalore -->
+                    <button class="loc-card" data-x="-12" data-y="-5" data-z="4.2">
+                        <div class="loc-header">
+                            <span class="loc-id">03</span>
+                            <h3>Bangalore, India</h3>
+                        </div>
+                        <div class="loc-details">
+                            <p>tūvi pixel, 1, Assaye Rd.<br>Bangalore 560042</p>
+                        </div>
+                    </button>
+
+                    <!-- Singapore -->
+                    <button class="loc-card" data-x="-35" data-y="-12" data-z="4.8">
+                        <div class="loc-header">
+                            <span class="loc-id">04</span>
+                            <h3>Singapore</h3>
+                        </div>
+                        <div class="loc-details">
+                            <p>International Plaza, 10, Anson Rd.<br>Singapore 079903</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         12. FOOTER SECTION
+         Main footer with CTA and links.
+         ======================================================================= -->
+    <!-- Legacy Footer (Commented Out) -->
+    <!-- 
+    <footer class="site-footer-premium">
+        <div class="footer-wrapper">
+             ... (Older Version) ...
+        </div>
+    </footer> 
+    -->
+
+    <footer class="site-footer-premium">
+        <div class="footer-wrapper">
+
+            <!-- Hero CTA in Footer -->
+            <div class="footer-cta-hero">
+                <div class="cta-text-wrapper">
+                    <h2 class="cta-large-text" id="magnetCTA">
+                        READY TO <br> <span>MOBILISE?</span>
+                    </h2>
+                </div>
+
+                <!-- Contact Trigger -->
+                <button class="envelope-trigger" id="openForm">
+                    <div class="btn-circle">
+                        <div class="btn-ripple"></div>
+                        <div class="icon-mail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="btn-label">GET IN TOUCH</span>
+                </button>
+            </div>
+
+            <!-- Main Footer Links Grid -->
+            <div class="footer-main-grid">
+                <!-- Locations -->
+                <div class="footer-nav-left">
+                    <span class="footer-label">Global Locations</span>
+                    <div class="location-block">
+                        <p class="loc-city">London, UK</p>
+                        <p class="loc-time"><span id="time-london">00:00:00</span> <span class="gmt-tag">GMT</span></p>
+                    </div>
+                    <div class="location-block">
+                        <p class="loc-city">Dubai, UAE</p>
+                        <p class="loc-time"><span id="time-dubai">00:00:00</span> <span class="gmt-tag">GST</span></p>
+                    </div>
+                    <div class="location-block">
+                        <p class="loc-city">Singapore, SG</p>
+                        <p class="loc-time"><span id="time-singapore">00:00:00</span> <span class="gmt-tag">SGT</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brand Mission -->
+                <div class="footer-brand-center">
+                    <img src="./images/mobilise_new_logo.png" alt="Mobilise Logo" class="footer-logo">
+                    <p class="footer-mission">Precision marketing for enterprise leaders. Engineered for speed, built
+                        for scale.</p>
+                </div>
+
+                <!-- Social & Contact -->
+                <div class="footer-nav-right">
+                    <span class="footer-label">Connect</span>
+                    <ul class="link-list">
+                        <li><a href="./contact/index.html">Contact Us</a></li>
+                        <li><a href="./careers/index.html">Careers</a></li>
+                        <li><a href="mailto:admin@mobilise.agency">admin@mobilise.agency</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="meta-line"></div>
+            <div class="meta-flex">
+                <p>© 2026 MOBILISE. B2B EXCELLENCE.</p>
+                <div class="meta-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =======================================================================
+         13. CONTACT OVERLAY
+         Popup form modal.
+         ======================================================================= -->
+    <div class="contact-overlay" id="contactOverlay">
+        <div class="overlay-close" id="closeForm">
+            <div class="close-circle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <h2 class="form-title">LET'S START THE <br>CONVERSATION</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label for="name">Your Name</label>
+                    <div class="line-focus"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Work Email</label>
+                    <div class="line-focus"></div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder=" " rows="1"></textarea>
+                    <label for="message">Project Details</label>
+                    <div class="line-focus"></div>
+                </div>
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- =======================================================================
+         14. SCRIPTS
+         Main logic.
+         ======================================================================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
